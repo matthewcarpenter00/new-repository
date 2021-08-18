@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Excuses</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="jumbotron text-center p-4 mt-5" style="height: 375px;">
+        <h1 class="display-4">What happened today?</h1>
+        <hr class="my-4">
+        <h3 id="excuse"><img src="https://media1.giphy.com/media/12E6e2Eh0Fq87K/giphy.gif?cid=790b76111d449b402b8a29f00885a8671455d0ca47b2181a&rid=giphy.gif" style="height: 50px;" id= "img">Dread Pirate Roberts ate the pope at the dmv.</h3>
+        <img src="https://media.giphy.com/media/1qktVRi0xWSxQZnzPI/giphy.gif" style="width: 200px; transform: scaleX(-1);">
+        <a class="btn btn-primary btn-lg mt-3" href="#" role="button" onclick="onLoad()">Excuse</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+    function onLoad(){
+        let who = ['The dog','A homeless man','A panda','Dread Pirate Roberts'];
+        let what = ['ate','kicked','yelled at','slapped'];
+        let whoElse = ['my mom' , 'the pope' , 'me' , 'an antelope'];
+        let where = ['at the dmv.','in the shire.','in silent hill.','in raccoon city.'];
+
+        let who1 = who[Math.floor(Math.random() * 4)];
+        let what1 = what[Math.floor(Math.random() * 4)];
+        let whoElse1 = whoElse[Math.floor(Math.random() * 4)];
+        let where1 = where[Math.floor(Math.random() * 4)];
+
+
+        document.querySelector("#excuse").innerHTML = who1 + " " + what1 + " " + whoElse1 + " " + where1;
+
+    }
+
+    
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
